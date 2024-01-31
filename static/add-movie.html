@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="js/script.js"></script>
+		<title>Cinema score</title>
+	</head>
+	<body>
+		<p id="username-display" style="margin-right: 10px;"></p>
+		<button id="login-button" style="margin-right: 10px;" onclick="redirectToLoginPage()">Login</button>
+    <button id="movies-button" onclick="redirectToMovies()" style="margin-right: 10px;">Movies</button>
+		<button id="logout-button" style="margin-right: 10px;" onclick="logout()">Logout</button>
+		<h2>Add a New Movie</h2>
+
+		<form id="add-movie-form" onsubmit="addMovie(event)">
+			<label for="movie-title">Title:</label>
+			<input type="text" id="movie-title" name="title" required>
+
+			<label for="movie-author">Author:</label>
+			<input type="text" id="movie-author" name="author" required>
+
+			<label for="movie-image">Image:</label>
+			<input type="file" id="movie-image" name="image" accept="image/*" onchange="previewImage(this)">
+			<img id="preview-image" alt="Preview Image">
+
+			<button type="submit">Add Movie</button>
+			<div id="error-container" style="color: red;"></div>
+			<div id="message-container" style="color: green;"></div>
+		</form>
+
+		<script>
+			displayUsernameAndSetButtons();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+[package]
+name = "cinema-score"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "cinema-score"
+path = "src/main.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+appinsights = "0.2.3"
+azure_storage = "0.19.0"
+azure_storage_blobs = "0.19.0"
+cookie = "0.18.0"
+dotenv = "0.15.0"
+mongodb = "2.8.0"
+rocket = { version = "0.5.0", features = ["json"] }
+serde = "1.0.195"
+serde-partial = "0.3.1"
+serde_bson = "0.0.1"
+serde_json = "1.0.111"
+tokio = { version = "1.35.1", features = ["macros"] }
+uuid = "1.7.0"

@@ -1,0 +1,6 @@
+.preview-image {
+  max-width: 300px; /* Set your desired maximum width */
+  max-height: 200px; /* Set your desired maximum height */
+  width: auto; /* Ensure the width adjusts according to the max-width constraint */
+  height: auto; /* Ensure the height adjusts according to the max-height constraint */
+}

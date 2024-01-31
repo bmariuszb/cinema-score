@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="js/script.js"></script>
+		<title>Cinema score</title>
+	</head>
+	<body>
+    <button id="movies-button" onclick="redirectToMovies()" style="margin-right: 10px;">Movies</button>
+		<h1>Register</h1>
+
+		<form id="registrationForm" onsubmit="registerUser(event)">
+			<label for="name">Username:</label>
+			<input type="text" id="name" name="name" autocomplete="off" required>
+
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" autocomplete="off" required>
+
+			<label for="confirmPassword">Confirm Password:</label>
+			<input type="password" id="confirmPassword" name="confirmPassword" autocomplete="off" required>
+
+			<button type="submit">Register</button>
+			<div id="error-container" style="color: red;"></div>
+		</form>
+		<p>Already have an account? <a href="/login">Login</a></p>
+		<script>
+			displayUsernameAndSetButtons();
+		</script>
+	</body>
+</html>

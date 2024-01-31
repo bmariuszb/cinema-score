@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="js/script.js"></script>
+		<title>Cinema score</title>
+	</head>
+	<body>
+		<p id="username-display" style="margin-right: 10px;"></p>
+		<button id="login-button" style="margin-right: 10px;" onclick="redirectToLoginPage()">Login</button>
+    <button id="movies-button" onclick="redirectToMovies()" style="margin-right: 10px;">Movies</button>
+		<button id="logout-button" style="margin-right: 10px;" onclick="logout()">Logout</button>
+		<h2>Delete movie</h2>
+		<div id="movies-list"></div>
+
+		<script>
+			displayUsernameAndSetButtons();
+			document.addEventListener("DOMContentLoaded", fetchMyMovies());
+		</script>
+	</body>
+</html>
